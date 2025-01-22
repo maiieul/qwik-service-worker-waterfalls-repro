@@ -1,15 +1,18 @@
-import { component$ } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
+import { component$, useSignal } from "@builder.io/qwik";
+import { type DocumentHead } from "@builder.io/qwik-city";
 
 export default component$(() => {
+  const isOpenSig = useSignal(false);
   return (
     <>
-      <h1>Hi 👋</h1>
-      <div>
-        Can't wait to see what you build with qwik!
-        <br />
-        Happy coding.
-      </div>
+      <button
+        onClick$={() => {
+          return (isOpenSig.value = !isOpenSig.value);
+        }}
+      >
+        Click me
+      </button>
+      {isOpenSig.value && <div>Hi 👋</div>}
     </>
   );
 });
