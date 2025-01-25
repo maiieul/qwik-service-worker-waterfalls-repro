@@ -9,6 +9,7 @@ export default component$(() => {
       <br />
       <h1>Home page</h1>
       <br />
+      {/* We need to extract the component to see the bug on 1.5.7 */}
       <ClickMe />
     </>
   );
