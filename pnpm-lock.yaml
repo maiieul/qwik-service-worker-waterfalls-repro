@@ -9,11 +9,11 @@ importers:
   .:
     devDependencies:
       '@builder.io/qwik':
-        specifier: 1.12.0
-        version: 1.12.0(vite@5.3.5(@types/node@20.14.11))
+        specifier: https://pkg.pr.new/@builder.io/qwik@7290
+        version: https://pkg.pr.new/@builder.io/qwik@7290(vite@5.3.5(@types/node@20.14.11))
       '@builder.io/qwik-city':
-        specifier: 1.12.0
-        version: 1.12.0(acorn@8.14.0)(rollup@4.31.0)(typescript@5.4.5)(vite@5.3.5(@types/node@20.14.11))
+        specifier: https://pkg.pr.new/@builder.io/qwik-city@7290
+        version: https://pkg.pr.new/@builder.io/qwik-city@7290(acorn@8.14.0)(rollup@4.31.0)(typescript@5.4.5)(vite@5.3.5(@types/node@20.14.11))
       '@types/eslint':
         specifier: 8.56.10
         version: 8.56.10
@@ -569,14 +569,16 @@ packages:
     resolution: {integrity: sha512-t8kDRGrKXyp6+tjUh7hw2RLyclsW4TRoRvRHtSyAX9Bb5ldlFh+90YAYY6awRXrlB4G5G2izNeGySpATlFzmOg==}
     engines: {node: '>=6.9.0'}
 
-  '@builder.io/qwik-city@1.12.0':
-    resolution: {integrity: sha512-jMPh/M1a0lfGtWlpwD6RYJv48+33G/o/p4fTheg1wlNnYNH3O30/mLNaoT5k4nLd++tKm47iDmdwQK1wgB6fFQ==}
+  '@builder.io/qwik-city@https://pkg.pr.new/@builder.io/qwik-city@7290':
+    resolution: {tarball: https://pkg.pr.new/@builder.io/qwik-city@7290}
+    version: 1.12.0
     engines: {node: '>=16.8.0 <18.0.0 || >=18.11'}
     peerDependencies:
       vite: ^5
 
-  '@builder.io/qwik@1.12.0':
-    resolution: {integrity: sha512-j4TRqEIRoZrqklgWIXM+ioAdEu53t+Rp0nP9sGpdagOaB5KRTN5jZCykZQT+5/HOvE2ZIRf34WIe0bhr/EFQRg==}
+  '@builder.io/qwik@https://pkg.pr.new/@builder.io/qwik@7290':
+    resolution: {tarball: https://pkg.pr.new/@builder.io/qwik@7290}
+    version: 1.12.0
     engines: {node: '>=16.8.0 <18.0.0 || >=18.11'}
     hasBin: true
     peerDependencies:
@@ -5215,7 +5217,7 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
-  '@builder.io/qwik-city@1.12.0(acorn@8.14.0)(rollup@4.31.0)(typescript@5.4.5)(vite@5.3.5(@types/node@20.14.11))':
+  '@builder.io/qwik-city@https://pkg.pr.new/@builder.io/qwik-city@7290(acorn@8.14.0)(rollup@4.31.0)(typescript@5.4.5)(vite@5.3.5(@types/node@20.14.11))':
     dependencies:
       '@mdx-js/mdx': 3.1.0(acorn@8.14.0)
       '@types/mdx': 2.0.13
@@ -5233,7 +5235,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@builder.io/qwik@1.12.0(vite@5.3.5(@types/node@20.14.11))':
+  '@builder.io/qwik@https://pkg.pr.new/@builder.io/qwik@7290(vite@5.3.5(@types/node@20.14.11))':
     dependencies:
       csstype: 3.1.3
       vite: 5.3.5(@types/node@20.14.11)

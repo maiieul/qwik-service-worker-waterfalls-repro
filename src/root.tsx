@@ -29,12 +29,12 @@ export default component$(() => {
           href={`${import.meta.env.BASE_URL}manifest.json`}
         />
         <RouterHead />
+        <ServiceWorkerRegister />
         {/* <PrefetchGraph />
         <PrefetchServiceWorker /> */}
       </head>
       <body lang="en">
         <RouterOutlet />
-        <ServiceWorkerRegister />
       </body>
     </QwikCityProvider>
   );
