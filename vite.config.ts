@@ -23,22 +23,7 @@ export default defineConfig(({ command, mode }): UserConfig => {
   return {
     plugins: [qwikCity(), qwikVite({debug: true, vendorRoots: []}), tsconfigPaths()],
     build: {
-      rollupOptions: {
-        output: {
-          // your custom naming logic or other Rollup output options
-          entryFileNames: ({ name }) => {
-            if (name.startsWith("entry")) {
-              return "[name].js";
-            }
-            return "build/[name]-[hash].js";
-          },
-          chunkFileNames: ({ name }) => {
-            console.log("chunkFileNames", name);
-            return "build/[name]-[hash].js";
-          },
-          assetFileNames: "build/[name]-[hash].[ext]",
-        },
-      },
+      minify: false
     },
 
     // This tells Vite which dependencies to pre-build in dev mode.

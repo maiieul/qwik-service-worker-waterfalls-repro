@@ -1,13 +1,11 @@
 import {
   component$,
+  PrefetchGraph,
+  PrefetchServiceWorker,
   // PrefetchGraph,
   // PrefetchServiceWorker,
 } from "@builder.io/qwik";
-import {
-  QwikCityProvider,
-  RouterOutlet,
-  ServiceWorkerRegister,
-} from "@builder.io/qwik-city";
+import { QwikCityProvider, RouterOutlet } from "@builder.io/qwik-city";
 import { RouterHead } from "./components/router-head/router-head";
 
 import "./global.css";
@@ -29,9 +27,9 @@ export default component$(() => {
           href={`${import.meta.env.BASE_URL}manifest.json`}
         />
         <RouterHead />
-        <ServiceWorkerRegister />
-        {/* <PrefetchGraph />
-        <PrefetchServiceWorker /> */}
+        {/* <ServiceWorkerRegister /> */}
+        <PrefetchGraph />
+        <PrefetchServiceWorker />
       </head>
       <body lang="en">
         <RouterOutlet />
